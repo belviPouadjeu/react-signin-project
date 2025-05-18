@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 
-body{
-    background: #ffffff;
+
+input::placeholder {
+    padding-left: .5%;
 }
