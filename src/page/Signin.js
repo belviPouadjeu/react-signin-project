@@ -10,20 +10,23 @@ const Signin = () => {
     const navigation = useNavigation();
     const [password, setPassword] = useState('');
 
-     const isFormValid = email.trim() !== '' && password.trim() !== '';
+    const isFormValid = email.trim() !== '' && password.trim() !== '';
     const isSubmitting = navigation.state === 'submitting';
 
     return (
-        <section className="grid grid-cols-1 md:grid-cols-2 min-h-screen left-4px">
+        <section className="grid grid-cols-1 md:grid-cols-2 min-h-screen align-element">
         {/* Left container */}
-            <div className='max-w-[610px] bg-white flex flex-col p-6 sm:px-8 md:px-12'>
-                <img 
-                src={logo}
-                alt="Company logo"
-                className="w-[150px] h-[58px] "
+            <div className='max-w-[610px] bg-white flex flex-col px-4 sm:px-8 max-md:px-12 justify-center'
+>
+                <div>
+                    <img 
+                    src={logo}
+                    alt="Company logo"
+                    className="w-[150px] h-[58px]"
                 />
+                </div>
 
-                <div className="max-w-md w-full relative mx-5 mt-4 sm:left-5">
+                <div className="max-w-md w-full relative mx-0 sm:mx-5 mt-6 sm:left-5">
                 <h1 className='font-bold font-inter text-4xl mb-1'>Signin</h1>
                 <h2 className='font-bold font-inter mt-2'>Welcome back!</h2>
                 <p className="mt-2 font-inter">Log in to manage your services, deals, and technical opportunities</p>
@@ -36,7 +39,7 @@ const Signin = () => {
                     </div>
                 </div>
 
-                <Form method='post' className='mt-8 space-y-5 mx-10'>
+                <Form method='post' className="mt-8 space-y-5 sm:mx-10 mx-0">
                     <FormInput 
                     type='email' 
                     label='E-mail' 

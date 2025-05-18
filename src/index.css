@@ -3,7 +3,19 @@
 @tailwind utilities;
 
 
+@layer components {
+    .align-element {
+        @apply mx-auto max-w-6xl;
+    }
+}
 
 input::placeholder {
     padding-left: .5%;
 }
+
+/* .logo{
+    position: relative;
+    width: 198px;
+    margin-left: 14px;
+    margin-top: -25px;
+} */
