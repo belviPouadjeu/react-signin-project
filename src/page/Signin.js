@@ -14,7 +14,7 @@ const Signin = () => {
     const isSubmitting = navigation.state === 'submitting';
 
     return (
-        <section className="grid grid-cols-1 md:grid-cols-2 min-h-screen align-element">
+        <section className="grid grid-cols-1 md:grid-cols-2 min-h-screen">
         {/* Left container */}
             <div className='max-w-[610px] bg-white flex flex-col px-4 sm:px-8 md:px-12 justify-center'>
                 <div>
