@@ -16,8 +16,7 @@ const Signin = () => {
     return (
         <section className="grid grid-cols-1 md:grid-cols-2 min-h-screen align-element">
         {/* Left container */}
-            <div className='max-w-[610px] bg-white flex flex-col px-4 sm:px-8 max-md:px-12 justify-center'
->
+            <div className='max-w-[610px] bg-white flex flex-col px-4 sm:px-8 md:px-12 justify-center'>
                 <div>
                     <img 
                     src={logo}
